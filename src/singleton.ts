@@ -46,14 +46,16 @@ class SingletonClass {
 }
 
 
-function main(): void {
+function mainSingleton(): void {
   // You can't do: myInstance = new SingletonClass('my example');
-  const MY_FIRST_INSTANCE: SingletonClass = SingletonClass.getInstance('My Singleton Class');
+  const MY_FIRST_INSTANCE: SingletonClass = 
+      SingletonClass.getInstance('My Singleton Class');
   console.log(MY_FIRST_INSTANCE.GetExampleAttribute());
-  const MY_SECOND_INSTANCE: SingletonClass = SingletonClass.getInstance('Nothing done here');
+  const MY_SECOND_INSTANCE: SingletonClass = 
+      SingletonClass.getInstance('Nothing done here');
   console.log(MY_SECOND_INSTANCE.GetExampleAttribute());
 }
 
 if (require.main === module) {
-  main();
+  mainSingleton();
 }
