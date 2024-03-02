@@ -45,9 +45,7 @@ class Circle implements Shape {
    * Copy the Circle object.
    * @returns A new Circle object with the same radius.
    */
-  clone(): Circle {
-    return new Circle(this.radius);
-  }
+  clone(): Circle { return new Circle(this.radius); }
 
   /**
    * Draw the Circle object.
@@ -56,7 +54,7 @@ class Circle implements Shape {
     console.log(`Drawing a circle of radius ${this.radius}`);
   }
 
-  // Setter y getter
+  // Setter and getter
   setRadius(radius: number): void { this.radius = radius; }
   getRadius(): number { return this.radius; }
 }
@@ -88,9 +86,7 @@ class Rectangle implements Shape {
    * Copy the Rectangle object.
    * @return A new Rectangle object with the same width and height.
    */
-  clone(): Rectangle {
-    return new Rectangle(this.width, this.height);
-  }
+  clone(): Rectangle { return new Rectangle(this.width, this.height); }
 
   /**
    * Draw the Rectangle object.
@@ -99,7 +95,7 @@ class Rectangle implements Shape {
     console.log(`Drawing a rectangle of width ${this.width} and height ${this.height}`);
   }
 
-  // Setters y Getters
+  // Setters and Getters
   setWidth(width: number): void { this.width = width; }
   getWidth(): number { return this.width; }
   setHeight(height: number): void { this.height = height; }
@@ -128,7 +124,8 @@ function mainPrototype(): void {
   clonedCircle.draw();
   clonedRectangle.draw();
 
-  // Modify the cloned objects
+  // Modify the cloned objects to verify that they are independent
+  // This is not a good practice, but it is useful for the example
   clonedCircle.setRadius(20);
   clonedRectangle.setWidth(20);
   clonedRectangle.setHeight(40);
