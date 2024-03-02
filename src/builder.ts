@@ -6,10 +6,10 @@
   * Design Patterns Presentation.
   * Programación de Interfaces Interactivas
   * 
-  * @file builder-2.0.ts
+  * @file builder.ts
   * @author Hugo Hernández Martín (alu0101481227)
   * @author Esther Medina Quintero (alu0101434780)
-  * @date 01/03/2024
+  * @date 02/03/2024
   * @brief Explicative implementation of builder pattern.
   * @see {@link https://refactoring.guru/design-patterns/builder}
   */
