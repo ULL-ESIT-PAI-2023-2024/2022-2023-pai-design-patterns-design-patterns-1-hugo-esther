@@ -119,7 +119,7 @@ class HouseBuilder implements Builder {
 }
 
 /**
- * Manage diferent types of car and motorcycle builds (using generic builder methods).
+ * Manage diferent types of house builds (using generic builder method).
  */
 class Director {
   public buildHouseWithPool(): House {
