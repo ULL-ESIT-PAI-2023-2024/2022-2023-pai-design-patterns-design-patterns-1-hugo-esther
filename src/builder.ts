@@ -11,6 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 02/03/2024
   * @brief Explicative implementation of builder pattern.
+  * Builder is a creational design pattern.
   * @see {@link https://refactoring.guru/design-patterns/builder}
   */
 
