@@ -11,6 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 01/03/2024
   * @brief Explicative implementation of singleton pattern.
+  * Singleton is an creational design pattern.
   * @see {@link https://refactoring.guru/design-patterns/singleton}
   * @see {@link https://youtu.be/GGq6s7xhHzY?si=lAgYYmwW5ay6tfik}
   */
