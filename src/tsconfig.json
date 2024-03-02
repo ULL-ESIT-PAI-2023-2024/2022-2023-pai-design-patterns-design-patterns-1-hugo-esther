@@ -12,7 +12,7 @@
     "noImplicitAny": true,                    /* will issue an error whenever it would have inferred any:*/ 
     "forceConsistentCasingInFileNames": true
   },
-  "files": ["singleton.ts"],
+  "files": ["singleton.ts", "builder.ts"],
   "exclude": [
         "node_modules",
         "build",
