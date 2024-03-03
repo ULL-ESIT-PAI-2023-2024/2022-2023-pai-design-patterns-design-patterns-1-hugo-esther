@@ -19,6 +19,7 @@
              "adapter.ts",
              "facade.ts",
              "proxy.ts",
+              "mediator.ts",
             ],
   "exclude": [
         "node_modules",
