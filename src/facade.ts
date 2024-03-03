@@ -91,6 +91,17 @@ class CloudProviderFacade {
   }
 }
 
+// // Client code that uses the complex system directly.
+// function badMainExample() {
+//   const CLOUD_SERVICE: CloudProviderService = new CloudProviderService();
+//   if (!CLOUD_SERVICE.isLoggedIn()) {
+//     CLOUD_SERVICE.logIn();
+//   }
+//   const CONVERTED_FILE: string = CLOUD_SERVICE.convertFile("file.txt");
+//   CLOUD_SERVICE.uploadFile(CONVERTED_FILE);
+//   const FILE_LINK: string = CLOUD_SERVICE.getFileLink(CONVERTED_FILE);
+// }
+
 // On the client code we can now use the facade to upload 
 // a file without having to worry about the complex system.
 function mainFacade() {
