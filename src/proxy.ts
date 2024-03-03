@@ -6,12 +6,12 @@
   * Design Patterns Presentation.
   * Programación de Interfaces Interactivas
   * 
-  * @file adapter.ts
+  * @file proxy.ts
   * @author Hugo Hernández Martín (alu0101481227)
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
   * @brief Explicative implementation of adapter pattern.
-  * Facade is a structural design pattern.
+  * Proxy is a structural design pattern.
   * @see {@link https://refactoring.guru/design-patterns/proxy}
   * @see {@link https://www.patterns.dev/vanilla/proxy-pattern/}
   */
