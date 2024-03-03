@@ -22,6 +22,7 @@
  * (Simulating a chat room)
  */
 class ChatRoom {
+  
   /**
    * Log a message from a user.
    * @param user User that sends the message.
@@ -40,6 +41,7 @@ class User {
   constructor(private name: string, private chatroom: ChatRoom) {}
   // Getter
   getName() { return this.name; }
+
   /**
    * Send a message to the chatroom.
    * @param message The message to send.
