@@ -66,24 +66,24 @@ class PersonProxy implements PersonInfo {
 }
 
 function mainProxy() {
-  const proxy = new PersonProxy(new Person());
+  const Proxy = new PersonProxy(new Person());
   console.log('Before set properties:');
-  console.log(proxy.getName()); // Unkwon
-  console.log(proxy.getAge()); // -1
+  console.log(Proxy.getName()); // Unkwon
+  console.log(Proxy.getAge()); // -1
 
-  proxy.setName('Hugo');
-  proxy.setAge(20);
+  Proxy.setName('Hugo');
+  Proxy.setAge(20);
   console.log('After set properties:')
-  console.log(proxy.getName()); // Hugo
-  console.log(proxy.getAge()); // 20
+  console.log(Proxy.getName()); // Hugo
+  console.log(Proxy.getAge()); // 20
 
   try {
-    proxy.setName('esther'); // Error: Invalid name
+    Proxy.setName('esther'); // Error: Invalid name
   } catch(error: any) {
     console.error('Error:', error.message);
   }
   try {
-    proxy.setAge(-1); // Error: Invalid age
+    Proxy.setAge(-1); // Error: Invalid age
   } catch(error: any) {
     console.error('Error:', error.message);
   }
