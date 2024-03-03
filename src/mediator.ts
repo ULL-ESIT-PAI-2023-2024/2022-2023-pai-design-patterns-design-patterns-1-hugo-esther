@@ -11,7 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
   * @brief Explicative implementation of adapter pattern.
-  * Mediator is a structural design pattern.
+  * Mediator is a behavioral design pattern.
   * @see {@link https://refactoring.guru/design-patterns/mediator}
   * @see {@link https://www.patterns.dev/vanilla/mediator-pattern}
   */
@@ -22,7 +22,7 @@
  * (Simulating a chat room)
  */
 class ChatRoom {
-  
+
   /**
    * Log a message from a user.
    * @param user User that sends the message.
