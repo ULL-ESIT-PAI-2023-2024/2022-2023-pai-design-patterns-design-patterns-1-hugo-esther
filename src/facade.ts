@@ -6,7 +6,7 @@
   * Design Patterns Presentation.
   * Programación de Interfaces Interactivas
   * 
-  * @file adapter.ts
+  * @file facade.ts
   * @author Hugo Hernández Martín (alu0101481227)
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
