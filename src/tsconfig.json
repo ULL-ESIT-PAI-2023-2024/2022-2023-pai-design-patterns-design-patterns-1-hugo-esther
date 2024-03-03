@@ -10,9 +10,10 @@
     "strictNullChecks": true,                 /* When type checking, take into account `null` and `undefined`. */
     "strict": true,
     "noImplicitAny": true,                    /* will issue an error whenever it would have inferred any:*/ 
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
   },
-  "files": ["singleton.ts", "builder.ts", "prototype.ts"],
+  "files": ["singleton.ts", "builder.ts", "prototype.ts", "adapter.ts"],
   "exclude": [
         "node_modules",
         "build",

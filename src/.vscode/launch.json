@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Adapter debugging",
+      "program": "${workspaceFolder}/dist/adapter.js",
+      "outFiles": ["${workspaceFolder}/dist/*.js"]
+    },
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Depuración Cliente MySet",
+    //   "program": "${workspaceFolder}/dist/sets.js",
+    //   "preLaunchTask": "tsc: build - tsconfig.json",
+    //   // "args": ["2", "3"],
+    //   // "outFiles": ["${workspaceFolder}/dist/*.js"]
+    // },
+  ]
+}
