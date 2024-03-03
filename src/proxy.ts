@@ -34,8 +34,8 @@ class Person implements PersonInfo {
   private name: string = 'Unknown';
   private age: number = -1;
   constructor(name?: string, age?: number) {
-    if (!name) this.name = 'Unknown';
-    if (!age) this.age = -1;
+    if (name) this.name = name;
+    if (age) this.age = age;
   }
   // Getters and setters
   getName(): string { return this.name; }
