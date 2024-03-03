@@ -13,7 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true
   },
-  "files": ["singleton.ts", "builder.ts", "prototype.ts", "adapter.ts"],
+  "files": ["singleton.ts", "builder.ts", "prototype.ts", "adapter.ts", "facade.ts"],
   "exclude": [
         "node_modules",
         "build",
