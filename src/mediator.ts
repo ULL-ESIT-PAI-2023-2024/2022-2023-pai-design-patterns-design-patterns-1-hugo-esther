@@ -29,8 +29,8 @@ class ChatRoom {
    * @param message Message sent by the user.
    */
   logMessage(user: User, message: string): void {
-    const sender = user.getName();
-    console.log(`${new Date().toLocaleString()} [${sender}]: ${message}`);
+    const SENDER = user.getName();
+    console.log(`${new Date().toLocaleString()} [${SENDER}]: ${message}`);
   }
 }
 
