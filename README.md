@@ -2,6 +2,15 @@
 
 ## Design patterns
 
+### Repository structure
+
+The repository structure for the design patterns project is as follows:
+
+- `src/`: This directory contains the source code files for the design patterns.
+- `slides/`: This directory contains the slides.
+- `bib/`: This directory contains all references and additional material used.
+- `README.md`: This file provides an overview of the design patterns project.
+
 ### What is a pattern?
 
 “Each pattern is a three-part rule, which expresses a relation between a certain context, a problem and a solution.”    
