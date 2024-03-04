@@ -17,9 +17,12 @@
              "./creational-patterns/builder.ts",
              "./creational-patterns/prototype.ts",
              "./structural-patterns/adapter.ts",
+             "./structural-patterns/composite.ts",
              "./structural-patterns/facade.ts",
              "./structural-patterns/proxy.ts",
+             "./behavioral-patterns/chain-of-responsability.ts",
              "./behavioral-patterns/mediator.ts",
+             "./behavioral-patterns/state.ts",
             ],
   "exclude": [
         "node_modules",
