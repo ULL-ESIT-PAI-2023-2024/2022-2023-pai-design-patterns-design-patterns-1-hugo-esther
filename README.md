@@ -1,63 +1,20 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/VwozefJB)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14118628&assignment_repo_type=AssignmentRepo)
+## PAI class Presentation Template 
+### To be used for works to be exposed in class sessions
 
-## Design patterns
+This directory is organised as follows:
 
-### What is a pattern?
+      .
+      ├── bib          # Presentation bibliography and references
+      ├── slides       # slides of your presentation (PDF is the preferred format)
+      ├── tests        # Source code for tests (if applicable)
+      ├── src          # Source code (add subdirectories if necessary) 
+      
+When you receive the link to this repository, clone it and use it to host all the material for the work to be done: slides, code, etc.
 
-“Each pattern is a three-part rule, which expresses a relation between a certain context, a problem and a solution.”    
-- Christopher Alexander
+Upload the link to this public repository to the class assignment. This is required for the evaluation of the work.
 
-### What is a design pattern?
+Post the link to the repository in the PAI forum before the presentation date of the work, so that all students have access to the material in the exposition session.
 
-[Design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) are solutions to software design problems you find again and again in real-world application development.    
-Patterns are about reusable designs and interactions of objects.
-
-### Classification of design patterns
-
-#### Creational patterns
-
-- Abstract factory
-- Builder
-- Dependency injection
-- Factory method
-- Lazy initialization
-- Multiton
-- Object pool
-- Prototype
-- Resource acquisition is initialization (RAII)
-- Singleton
-
-#### Structural patterns
-
-- Adapter, wrapper or translator
-- Bridge
-- Composite
-- Decorator
-- Delegation
-- Extension object
-- Facade
-- Flyweight
-- Front controller
-- Marker
-- Module
-- Proxy
-- Twin
-
-#### Behavioral patterns
-
-- Blackboard
-- Chain of responsibility
-- Command
-- Fluent interface
-- Interpreter
-- Iterator
-- Mediator 
-- Memento
-- Null object
-- Observer or publish/suscribe
-- Servant
-- Specification
-- State
-- Strategy
-- Template method
-- Visitor
+Remove from the repository those directories that are not necessary for your work.
