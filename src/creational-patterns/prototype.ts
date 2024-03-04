@@ -11,27 +11,23 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 02/03/2024
   * @brief Explicative implementation of builder pattern.
-  * Prototype is a creational design pattern.
+  *        Prototype is a creational design pattern.
   * @see {@link https://refactoring.guru/design-patterns/prototype}
   * @see {@link https://www.geeksforgeeks.org/prototype-pattern-c-design-patterns/}
   */
 
-/**
- * Interface for the Shape classes.
- */
+/// Interface for the Shape classes.
 interface Shape {
-  clone(): any;   // Clone method for creating copies. Use any because it will return different types.
-  draw(): void;   // Draw method for rendering the shape.
+  clone(): any; /// Clone method for creating copies. Use any because it will return different types.
+  draw(): void; /// Draw method for rendering the shape.
 }
 
-/**
- * Class for the Circle shape.
- */
+/// Class for the Circle shape.
 class Circle implements Shape {
   private radius: number;
 
   /**
-   * Constructor of the Circle class.
+   * @desc Constructor of the Circle class.
    * @param radius The radius of the circle.
    */
   constructor(radius?: number) {
@@ -43,32 +39,28 @@ class Circle implements Shape {
   }
 
   /**
-   * Copy the Circle object.
+   * @desc Copy the Circle object.
    * @returns A new Circle object with the same radius.
    */
   clone(): Circle { return new Circle(this.radius); }
 
-  /**
-   * Draw the Circle object.
-   */
+  /// Draws the Circle object.
   draw(): void {
     console.log(`Drawing a circle of radius ${this.radius}`);
   }
 
-  // Setter and getter
+  /// Setter and getter
   setRadius(radius: number): void { this.radius = radius; }
   getRadius(): number { return this.radius; }
 }
 
-/**
- * Class for the Rectangle shape.
- */
+/// Class for the Rectangle shape.
 class Rectangle implements Shape {
   private width: number;
   private height: number;
 
   /**
-   * Constructor of the Rectangle class.
+   * @desc Constructor of the Rectangle class.
    * @param width The width of the rectangle.
    * @param height The height of the rectangle.
    */
@@ -84,26 +76,24 @@ class Rectangle implements Shape {
   }
 
   /**
-   * Copy the Rectangle object.
+   * @desc Copy the Rectangle object.
    * @return A new Rectangle object with the same width and height.
    */
   clone(): Rectangle { return new Rectangle(this.width, this.height); }
 
-  /**
-   * Draw the Rectangle object.
-   */
+  /// Draws the Rectangle object.
   draw(): void {
     console.log(`Drawing a rectangle of width ${this.width} and height ${this.height}`);
   }
 
-  // Setters and Getters
+  /// Setters and Getters
   setWidth(width: number): void { this.width = width; }
   getWidth(): number { return this.width; }
   setHeight(height: number): void { this.height = height; }
   getHeight(): number { return this.height; }
 }
 
-// // Bad example of cloning objects
+// /// Bad example of cloning objects
 // function mainBadExample(): void {
 //   let rectangle: Rectangle = new Rectangle(10, 20);
 //   let clonedRectangle: Rectangle = new Rectangle();
@@ -125,8 +115,8 @@ function mainPrototype(): void {
   clonedCircle.draw();
   clonedRectangle.draw();
 
-  // Modify the cloned objects to verify that they are independent
-  // This is not a good practice, but it is useful for the example
+  /// Modify the cloned objects to verify that they are independent
+  /// This is not a good practice, but it is useful for the example
   clonedCircle.setRadius(20);
   clonedRectangle.setWidth(20);
   clonedRectangle.setHeight(40);

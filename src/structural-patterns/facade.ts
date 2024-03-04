@@ -11,7 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
   * @brief Explicative implementation of adapter pattern.
-  * Facade is a structural design pattern.
+  *        Facade is a structural design pattern.
   * @see {@link https://refactoring.guru/design-patterns/facade}
   * @see {@link https://github.com/josemiguel-alvarez/design-patterns-typescript.git}
   */
@@ -21,22 +21,18 @@
  * It is a cloud provider service that allows to log in, convert files, upload files and get file links.
  */
 class CloudProviderService {
-  /**
-   * Simulate a user login.
-   */
+  /// Simulate a user login.
   public isLoggedIn(): boolean {
     return Math.random() > 0.5 ? true : false;
   }
 
-  /**
-   * Simulate a user login.
-   */
+  /// Simulate a user login.
   public logIn(): void {
     console.log("Logging in...");
   }
 
   /**
-   * Simulate a file conversion.
+   * @desc Simulate a file conversion.
    * @param file - The file to convert.
    * @returns The converted file.
    */
@@ -46,7 +42,7 @@ class CloudProviderService {
   }
 
   /**
-   * Simulate a file upload.
+   * @desc Simulate a file upload.
    * @param file - The file to upload.
    */
   public uploadFile(file: string): void {
@@ -54,7 +50,7 @@ class CloudProviderService {
   }
 
   /**
-   * Simulate getting a file link.
+   * @desc Simulate getting a file link.
    * @param file The file to get the link for.
    * @returns link to the file.
    */
@@ -75,7 +71,7 @@ class CloudProviderFacade {
   }
 
   /**
-   * Simulates an upload of a file to the cloud.
+   * @desc Simulates an upload of a file to the cloud.
    * @param file File to upload.
    * @returns Link to the uploaded file on the cloud.
    */

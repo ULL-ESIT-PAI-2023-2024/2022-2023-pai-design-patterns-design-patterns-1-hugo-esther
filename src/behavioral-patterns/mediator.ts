@@ -11,7 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
   * @brief Explicative implementation of adapter pattern.
-  * Mediator is a behavioral design pattern.
+  *        Mediator is a behavioral design pattern.
   * @see {@link https://refactoring.guru/design-patterns/mediator}
   * @see {@link https://www.patterns.dev/vanilla/mediator-pattern}
   */
@@ -24,7 +24,7 @@
 class ChatRoom {
 
   /**
-   * Log a message from a user.
+   * @desc Log a message from a user.
    * @param user User that sends the message.
    * @param message Message sent by the user.
    */
@@ -34,16 +34,14 @@ class ChatRoom {
   }
 }
 
-/**
- * Component class that sends messages to the mediator.
- */
+/// Component class that sends messages to the mediator.
 class User {
   constructor(private name: string, private chatroom: ChatRoom) {}
-  // Getter
+  /// Getter
   getName() { return this.name; }
 
   /**
-   * Send a message to the chatroom.
+   * @desc Send a message to the chatroom.
    * @param message The message to send.
    */
   send(message: string): void {

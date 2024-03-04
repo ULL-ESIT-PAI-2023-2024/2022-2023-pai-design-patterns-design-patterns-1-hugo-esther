@@ -11,7 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 02/03/2024
   * @brief Explicative implementation of builder pattern.
-  * Builder is a creational design pattern.
+  *        Builder is a creational design pattern.
   * @see {@link https://refactoring.guru/design-patterns/builder}
   */
 
@@ -35,7 +35,7 @@ class House {
   //   this.garden = garden;
   // }
 
-  // Getters and setters
+  /// Getters and setters
   public getWalls(): number { return this.walls; }
   public setWalls(walls: number) { this.walls = walls; }
 
@@ -54,9 +54,7 @@ class House {
   public getGarden(): boolean { return this.garden; }
   public setGarden(garden: boolean) { this.garden = garden; }
 
-  /**
-   * Show the house attributes.
-   */
+  /// Show method to display the house attributes
   public show(): void {
     console.log(`Walls: ${this.walls}`);
     console.log(`Doors: ${this.doors}`);
@@ -119,9 +117,7 @@ class HouseBuilder implements Builder {
   }
 }
 
-/**
- * Manage diferent types of house builds (using generic builder method).
- */
+/// Manage diferent types of house builds (using generic builder method).
 class Director {
   public buildHouseWithPool(): House {
     return new HouseBuilder().setWalls(4)

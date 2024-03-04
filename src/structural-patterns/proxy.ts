@@ -11,7 +11,7 @@
   * @author Esther Medina Quintero (alu0101434780)
   * @date 03/03/2024
   * @brief Explicative implementation of adapter pattern.
-  * Proxy is a structural design pattern.
+  *        Proxy is a structural design pattern.
   * @see {@link https://refactoring.guru/design-patterns/proxy}
   * @see {@link https://www.patterns.dev/vanilla/proxy-pattern/}
   */
@@ -27,9 +27,7 @@ interface PersonInfo {
   setAge(age: number): void;
 }
 
-/**
- * The RealSubject.
- */
+/// The RealSubject.
 class Person implements PersonInfo {
   private name: string = 'Unknown';
   private age: number = -1;
@@ -37,7 +35,7 @@ class Person implements PersonInfo {
     if (name) this.name = name;
     if (age) this.age = age;
   }
-  // Getters and setters
+  /// Getters and setters
   getName(): string { return this.name; }
   getAge(): number { return this.age; }
   setName(name: string): void { this.name = name; }
@@ -46,10 +44,10 @@ class Person implements PersonInfo {
 
 class PersonProxy implements PersonInfo {
   constructor(private person: Person) {}
-  // Getters
+  /// Getters
   getName(): string { return this.person.getName(); }
   getAge(): number { return this.person.getAge(); }
-  // Setters with validation
+  /// Setters with validation
   setName(name: string): void {
     if (/[A-Z][a-z]+/.test(name)) {
       this.person.setName(name);
@@ -68,22 +66,22 @@ class PersonProxy implements PersonInfo {
 function mainProxy() {
   const proxy = new PersonProxy(new Person());
   console.log('Before set properties:');
-  console.log(proxy.getName()); // Unkwon
-  console.log(proxy.getAge()); // -1
+  console.log(proxy.getName()); /// Unkwon
+  console.log(proxy.getAge()); /// -1
 
   proxy.setName('Hugo');
   proxy.setAge(20);
   console.log('After set properties:')
-  console.log(proxy.getName()); // Hugo
-  console.log(proxy.getAge()); // 20
+  console.log(proxy.getName()); /// Hugo
+  console.log(proxy.getAge()); /// 20
 
   try {
-    proxy.setName('esther'); // Error: Invalid name
+    proxy.setName('Esther'); // Error: Invalid name
   } catch(error: any) {
     console.error('Error:', error.message);
   }
   try {
-    proxy.setAge(-1); // Error: Invalid age
+    proxy.setAge(-1); /// Error: Invalid age
   } catch(error: any) {
     console.error('Error:', error.message);
   }
