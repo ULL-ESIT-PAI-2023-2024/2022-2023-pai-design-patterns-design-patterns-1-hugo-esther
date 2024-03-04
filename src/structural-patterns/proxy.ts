@@ -76,7 +76,7 @@ function mainProxy() {
   console.log(proxy.getAge()); /// 20
 
   try {
-    proxy.setName('Esther'); // Error: Invalid name
+    proxy.setName('esther'); // Error: Invalid name
   } catch(error: any) {
     console.error('Error:', error.message);
   }
