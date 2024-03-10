@@ -24,7 +24,7 @@ interface Printer {
 /// Existing service (existing interface that needs adapting)
 class LegacyPrinter {
   /// Print with Legacy Printer
-  printString(): void {
+  public printString(): void {
     console.log('Printing with Legacy Printer');
   }
 }
@@ -32,9 +32,8 @@ class LegacyPrinter {
 /// Adapter (class that adapts the new interface to the existing interface
 class PrinterAdapter implements Printer {
   private legacyPrinter: LegacyPrinter = new LegacyPrinter();
-
   /// Print with the new interface using the existing interface
-  print(): void {
+  public print(): void {
     this.legacyPrinter.printString();
   }
 }
