@@ -27,7 +27,7 @@ interface IHandler {
 
 class Successor1 implements IHandler {
   // A Concrete Handler
-  handle(payload: number) {
+  public handle(payload: number) {
     console.log(`Successor1 payload = ${payload}`)
     const test = Math.floor(Math.random() * 2) + 1;
     if (test === 1) {
@@ -43,7 +43,7 @@ class Successor1 implements IHandler {
 
 class Successor2 implements IHandler {
   // A Concrete Handler
-  handle(payload: number) {
+  public handle(payload: number) {
     console.log(`Successor2 payload = ${payload}`);
     const test = Math.floor(Math.random() * 3) + 1;
     if (test === 1) {
@@ -59,7 +59,7 @@ class Successor2 implements IHandler {
 
 class Chain {
   // A chain with a default first successor
-  start(payload: number) {
+  public start(payload: number) {
     // Setting the first successor that will modify the payload
     return new Successor1().handle(payload);
   }

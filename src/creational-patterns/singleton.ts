@@ -26,7 +26,7 @@ class SingletonClass {
    * @param exampleParameter An example parameter to show that there is only one unique instance. 
    * @return Unique singleton instance.
    */
-  static getInstance(exampleParameter: string): SingletonClass {
+  public static getInstance(exampleParameter: string): SingletonClass {
     if (!this.singletonInstance) {
       this.singletonInstance = new SingletonClass(exampleParameter);
     }
@@ -37,12 +37,11 @@ class SingletonClass {
    * @desc Getter method for the example attribute of the class.
    * @return Value of the example attribute.
    */
-  GetExampleAttribute(): string { return this.exampleAttribute; }
+  public GetExampleAttribute(): string { return this.exampleAttribute; }
 
   /// Private constructor to avoid undesired instantiations
   private constructor(private exampleAttribute: string) {}
 }
-
 
 function mainSingleton(): void {
   /// You can't do: myInstance = new SingletonClass('my example');

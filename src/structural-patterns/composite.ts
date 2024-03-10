@@ -22,53 +22,53 @@ interface Component {
 }
 
 abstract class Leaf implements Component {
-  operation() {}
+  public operation() {}
 }
 
 abstract class Composite implements Component {
   protected childs: Component[] = [];
-  operation() {
+  public operation() {
     this.childs.forEach(child => {
       child.operation();
     });
   }
-  add(component: Component) {
+  public add(component: Component) {
     this.childs.push(component);
   }
-  remove(component: Component) {
+  public remove(component: Component) {
     this.childs.splice(this.childs.indexOf(component), 1);
   }
-  getChild() {
+  public getChild() {
     return this.childs;
   }
 }
 
 class Duck extends Composite {
-  constructor(childs: Component[]) {
+  public constructor(childs: Component[]) {
     super();
     this.childs = childs;
   }
 }
 
 class DuckVoice extends Leaf {
-  operation() {
+  public operation() {
     console.log('Quack.');
   }
 }
 
 class DuckFly extends Composite {
-  operation() {
+  public operation() {
     console.log('It flies.');
     super.operation();
   }
-  add(component: Component) {
+  public add(component: Component) {
     super.add(component);
     return this;
   }
 }
 
 class Wing extends Leaf {
-  operation() {
+  public operation() {
     console.log('Flap-flap-flap');
   }
 }

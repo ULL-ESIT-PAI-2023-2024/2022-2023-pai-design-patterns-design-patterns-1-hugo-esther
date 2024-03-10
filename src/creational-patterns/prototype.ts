@@ -30,7 +30,7 @@ class Circle implements Shape {
    * @desc Constructor of the Circle class.
    * @param radius The radius of the circle.
    */
-  constructor(radius?: number) {
+  public constructor(radius?: number) {
     if (radius !== undefined) {
       this.radius = radius;
     } else {
@@ -42,16 +42,16 @@ class Circle implements Shape {
    * @desc Copy the Circle object.
    * @returns A new Circle object with the same radius.
    */
-  clone(): Circle { return new Circle(this.radius); }
+  public clone(): Circle { return new Circle(this.radius); }
 
   /// Draws the Circle object.
-  draw(): void {
+  public draw(): void {
     console.log(`Drawing a circle of radius ${this.radius}`);
   }
 
   /// Setter and getter
-  setRadius(radius: number): void { this.radius = radius; }
-  getRadius(): number { return this.radius; }
+  public setRadius(radius: number): void { this.radius = radius; }
+  public getRadius(): number { return this.radius; }
 }
 
 /// Class for the Rectangle shape.
@@ -64,7 +64,7 @@ class Rectangle implements Shape {
    * @param width The width of the rectangle.
    * @param height The height of the rectangle.
    */
-  constructor(width?: number, height?: number) {
+  public constructor(width?: number, height?: number) {
     if (width === undefined) {
       width = 1;
     }
@@ -79,18 +79,18 @@ class Rectangle implements Shape {
    * @desc Copy the Rectangle object.
    * @return A new Rectangle object with the same width and height.
    */
-  clone(): Rectangle { return new Rectangle(this.width, this.height); }
+  public clone(): Rectangle { return new Rectangle(this.width, this.height); }
 
   /// Draws the Rectangle object.
-  draw(): void {
+  public draw(): void {
     console.log(`Drawing a rectangle of width ${this.width} and height ${this.height}`);
   }
 
   /// Setters and Getters
-  setWidth(width: number): void { this.width = width; }
-  getWidth(): number { return this.width; }
-  setHeight(height: number): void { this.height = height; }
-  getHeight(): number { return this.height; }
+  public setWidth(width: number): void { this.width = width; }
+  public getWidth(): number { return this.width; }
+  public setHeight(height: number): void { this.height = height; }
+  public getHeight(): number { return this.height; }
 }
 
 // /// Bad example of cloning objects

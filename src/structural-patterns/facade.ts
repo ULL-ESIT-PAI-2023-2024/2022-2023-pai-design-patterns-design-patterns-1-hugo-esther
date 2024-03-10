@@ -66,7 +66,7 @@ class CloudProviderService {
 class CloudProviderFacade {
   private service: CloudProviderService;
 
-  constructor() {
+  public constructor() {
     this.service = new CloudProviderService();
   }
 

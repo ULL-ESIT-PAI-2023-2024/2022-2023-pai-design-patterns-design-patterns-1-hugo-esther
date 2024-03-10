@@ -28,7 +28,7 @@ class ChatRoom {
    * @param user User that sends the message.
    * @param message Message sent by the user.
    */
-  logMessage(user: User, message: string): void {
+  public logMessage(user: User, message: string): void {
     const SENDER = user.getName();
     console.log(`${new Date().toLocaleString()} [${SENDER}]: ${message}`);
   }
@@ -38,13 +38,13 @@ class ChatRoom {
 class User {
   constructor(private name: string, private chatroom: ChatRoom) {}
   /// Getter
-  getName() { return this.name; }
+  public getName() { return this.name; }
 
   /**
    * @desc Send a message to the chatroom.
    * @param message The message to send.
    */
-  send(message: string): void {
+  public send(message: string): void {
     this.chatroom.logMessage(this, message);
   }
 }

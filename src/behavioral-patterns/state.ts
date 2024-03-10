@@ -21,13 +21,13 @@ interface State {
 }
 
 class HappyState implements State {
-  think() {
+  public think() {
     return 'I am happy';
   }
 }
 
 class SadState implements State {
-  think() {
+  public think() {
     return 'I am sad';
   }
 }
@@ -39,11 +39,11 @@ class Human {
     this.state = new HappyState();
   }
 
-  changeState(state) {
+  public changeState(state) {
     this.state = state;
   }
 
-  think() {
+  public think() {
     return this.state.think();
   }
   

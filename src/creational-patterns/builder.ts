@@ -25,7 +25,7 @@ class House {
 
 
   // Bad constructor with a lot of parameters
-  // constructor(walls: number, doors: number, rooms: number,
+  // public constructor(walls: number, doors: number, rooms: number,
   //             pool: boolean, garage: boolean, garden: boolean) {
   //   this.walls = walls;
   //   this.doors = doors;
@@ -78,7 +78,7 @@ interface Builder {
 class HouseBuilder implements Builder {
   private house: House;
 
-  constructor() {
+  public constructor() {
     this.house = new House();
   }
 

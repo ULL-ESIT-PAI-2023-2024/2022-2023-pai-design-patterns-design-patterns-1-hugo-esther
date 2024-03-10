@@ -36,26 +36,26 @@ class Person implements PersonInfo {
     if (age) this.age = age;
   }
   /// Getters and setters
-  getName(): string { return this.name; }
-  getAge(): number { return this.age; }
-  setName(name: string): void { this.name = name; }
-  setAge(age: number): void { this.age = age; }
+  public getName(): string { return this.name; }
+  public getAge(): number { return this.age; }
+  public setName(name: string): void { this.name = name; }
+  public setAge(age: number): void { this.age = age; }
 }
 
 class PersonProxy implements PersonInfo {
   constructor(private person: Person) {}
   /// Getters
-  getName(): string { return this.person.getName(); }
-  getAge(): number { return this.person.getAge(); }
+  public getName(): string { return this.person.getName(); }
+  public getAge(): number { return this.person.getAge(); }
   /// Setters with validation
-  setName(name: string): void {
+  public setName(name: string): void {
     if (/[A-Z][a-z]+/.test(name)) {
       this.person.setName(name);
     } else {
       throw new Error('Invalid name');
     }
   }
-  setAge(age: number): void {
+  public setAge(age: number): void {
     if (!Number.isInteger(age) || age < 0) {
       throw new Error('Invalid age');
     }
